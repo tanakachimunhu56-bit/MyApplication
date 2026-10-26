@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header"
+        android:padding="20dp"
+        android:text="Settings"
+        android:textColor="@color/sp_white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/switchExpiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Highlight items expiring within 3 days"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:text="Smart Pantry Manager v1.1\nSuggests recipes using only what you already have."
+        android:textSize="14sp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sp_green_light"
+        app:itemIconTint="@color/sp_green"
+        app:itemTextColor="@color/sp_green"
+        app:menu="@menu/bottom_nav_menu" />
+</LinearLayout>
